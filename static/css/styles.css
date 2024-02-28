@@ -1,0 +1,69 @@
+body {
+    background-color: #1B262C;
+}
+h1,h2,h3{
+    color: #BBE1FA;
+}
+p {
+    color: white;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+span {
+    color: #BBE1FA;
+}
+.nav-link {
+    color: #BBE1FA;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {
+    background-color: #0F4C75;
+}
+#navbar {
+    background-color: #BBE1FA;
+    color: #1B262C;
+}
+#headshot {
+    border:3px solid #BBE1FA;
+}
+#images {
+    color: white;
+}
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a:hover {
+    opacity: 0.5;
+}
+#navbar:hover {
+    opacity: 0.5;
+}
+#submitButton {
+    background-color: #BBE1FA;
+    color: #1B262C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.form-floating {
+    color: #1B262C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jakub Świdłowski Portfolio website</title>
+    {% block styles %}
+    {{ bootstrap.load_css() }}
+    <link rel="stylesheet" href="static/css/styles.css" >
+    <link rel="icon" type="image/x-icon" href="static/assets/img/person-vcard.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="white" class="bi bi-person-vcard" viewBox="0 0 16 16"><path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/></svg>
+        <span class="fs-4 kanit-bold" style="margin: 1px 20px;">Jakub Świdłowski</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="{{url_for('main_page')}}" class="nav-link active kanit-light" id="navbar" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="{{url_for('resume')}}" class="nav-link">My Résumé</a></li>
+        <li class="nav-item"><a href="{{url_for('contact')}}" class="nav-link">Contact</a></li>
+      </ul>
+     </nav>
+    </header>
+  </div>
