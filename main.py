@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
 import smtplib
 import os
@@ -7,12 +7,18 @@ app = Flask(__name__)
 Bootstrap5(app)
 MAIL_ADDRESS = os.environ.get("EMAIL_KEY")
 MAIL_APP_PW = os.environ.get("PASSWORD_KEY")
+
+
 @app.route('/')
 def main_page():
     return render_template("index.html")
+
+
 @app.route('/resume')
 def resume():
     return render_template("resume.html")
+
+
 @app.route('/contact', methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
