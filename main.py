@@ -30,7 +30,7 @@ def contact():
 
 
 def send_email(name, email, phone, message):
-    email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
+    email_message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
     email_message = MIMEText(email_message, 'plain', 'utf-8')
     email_message['From'] = MAIL_ADDRESS
     email_message['To'] = MAIL_ADDRESS
