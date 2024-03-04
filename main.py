@@ -5,15 +5,17 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
 import smtplib
 import os
+import resend
 
 app = Flask(__name__)
 Bootstrap5(app)
-MAIL_ADDRESS = os.environ.get("EMAIL_KEY")
-MAIL_APP_PW = os.environ.get("PASSWORD_KEY")
+MAIL_ADDRESS = os.environ.get("EMAIL_ADDRES")
+
 @app.route('/')
 def main_page():
     return render_template("index.html")
 
+resend.api_key = os.environ.get("RESEND_API_KEY")
 
 @app.route('/resume')
 def resume():
@@ -30,15 +32,12 @@ def contact():
 
 
 def send_email(name, email, phone, message):
-    email_message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
-    email_message = MIMEText(email_message, 'plain', 'utf-8')
-    email_message['From'] = MAIL_ADDRESS
-    email_message['To'] = MAIL_ADDRESS
-    email_message['Subject'] = Header('New Message', 'utf-8')
-    with smtplib.SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
-        connection.login(MAIL_ADDRESS, MAIL_APP_PW)
-        connection.sendmail(MAIL_ADDRESS, MAIL_ADDRESS, email_message.as_string())
+    response = resend.Emails.send({
+        "from": "onboarding@resend.dev",
+        "to": MAIL_ADDRESS,
+        "subject": 'New Message',
+        "html": f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}",
+    })
 
 
 if __name__ == "__main__":
