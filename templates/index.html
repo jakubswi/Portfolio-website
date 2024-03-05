@@ -1,64 +1,68 @@
 {% include "header.html" %}
 <div class="py-5 text-center" style="background-image: url('static/assets/img/background_img.jpg'); background-size:contain; background-position: center center;">
     <img class="d-block mx-auto mb-4 rounded" src="static/assets/img/headshot.jpg" alt="head shot" id="headshot" width="400"></div>
-    <div class="py-5 text-center"><h1 class="display-5 kanit-bold">Hello there</h1>
+<div class="py-5 text-center"><h1 class="display-5 kanit-bold">Hello there</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Welcome to my portfolio website! My name is Jakub Świdłowski, and I'm thrilled to have you here. Let me give you a quick overview of my career journey so far.
+        <p class="lead mb-4">Welcome to my portfolio website! My name is Jakub Świdłowski, and I'm thrilled to have you here. Let me give you a quick overview of my career journey so far.
 I began my professional development journey by immersing myself in Python, starting from the basics and progressing to becoming a proficient developer. I am passionate about leveraging technology to solve real-world problems and create meaningful solutions.
           Feel free to explore my portfolio to see examples of my work and projects that demonstrate my capabilities and interests. Thank you for visiting, and I look forward to connecting with you!</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3 kanit-light" id="navbar" onclick="location.href='{{url_for('resume')}}'">My Résumé</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4 kanit-light" onclick="location.href='{{url_for('contact')}}'">Contact</button>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 kanit-light" id="navbar" onclick="location.href='{{url_for('resume')}}'">My Résumé</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 kanit-light" onclick="location.href='{{url_for('contact')}}'">Contact</button>
       </div>
     </div>
 </div>
 <div class="container px-4 py-5">
   <h2 class="pb-2 border-bottom kanit-bold">What I work in</h2>
-  <div class="d-flex gap-2 justify-content-center py-5">
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-      <img class="me-1" width="24" height="24" src="static/assets/img/python-logo-only.png" alt="Python logo"> Python
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/flask.png" alt="Flask logo">Flask
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/HTML5.png" alt="HTML logo">HTML
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/CSS3.png" alt="CSS logo">CSS
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/Bootstrap.png" alt="Bootstrap logo">Bootstrap
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    RESTful API
-  </span>
-      <div class="vl"></div>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas logo">Pandas
-  </span>
-  <span class="badge d-flex align-items-center p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="90" height="24" src="static/assets/img/Plotly-logo.png" alt="Plotly logo">
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/Matplotlib.png" alt="Matplotlib logo">Matplotlib
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/NumPy.png" alt="NumPy logo">NumPy
-  </span>
-      <div class="vl"></div>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    Tkinter
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/Selenium.png" alt="Selenium">Selenium
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    BeautifulSoup
-  </span>
-  <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-    <img class="me-1" width="24" height="24" src="static/assets/img/SQLite.png" alt="SQLite logo">SQLite
-  </span>
+  <div class="container-lg row justify-content-center">
+    <div  class="d-flex gap-2 justify-content-center py-3 col-md-auto">
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/python-logo-only.png" alt="Python logo"> Python
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/flask.png" alt="Flask logo">Flask
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/HTML5.png" alt="HTML logo">HTML
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/CSS3.png" alt="CSS logo">CSS
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+             <img class="me-1" width="24" height="24" src="static/assets/img/Bootstrap.png" alt="Bootstrap logo">Bootstrap
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            RESTful API
+        </span>
+    </div>
+    <div  class="d-flex gap-2 justify-content-center py-3 col-md-auto">
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas logo">Pandas
+        </span>
+        <span class="badge d-flex align-items-center p-1 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="90" height="24" src="static/assets/img/Plotly-logo.png" alt="Plotly logo">
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/Matplotlib.png" alt="Matplotlib logo">Matplotlib
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/NumPy.png" alt="NumPy logo">NumPy
+        </span>
+    </div>
+    <div  class="d-flex gap-2 justify-content-center py-3 col-md-auto">
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            Tkinter
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/Selenium.png" alt="Selenium">Selenium
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            BeautifulSoup
+        </span>
+        <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+            <img class="me-1" width="24" height="24" src="static/assets/img/SQLite.png" alt="SQLite logo">SQLite
+        </span>
+    </div>
   </div>
 </div>
 <div class="container px-4 py-5" id="featured-3">

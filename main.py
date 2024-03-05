@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
-from email.mime.text import MIMEText
-from email.header import Header
 from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap5
-import smtplib
 import os
 import resend
 
